@@ -1,0 +1,34 @@
+node_modules
+dist
+~
+
+.env
+.env.bk
+
+# for csv dumps
+public
+.DS_Store
+
+
+/xmls
+/zips
+
+
+# bogdan's stuff
+.aws
+.envold
+/scripts
+
+#webstorm  files
+.idea
+
+#Anas
+local_test_pa_consumer_kasmi.ts
+src/civil_produce.ts
+src/scheduled_tasks/civil_produce.ts
+
+# amanda's
+local_test_pa_consumer_amanda.ts
+.vscode/settings.json
+test.ts
+

@@ -1,0 +1,22 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "homesalesclub-api"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+          AwsvpcConfiguration:
+            Subnets: ["subnet-0699902f2e889945c","subnet-05cec7d77ed1cca8e","subnet-0a170b9ea72e13392"]
+            SecurityGroups: ["sg-09479390e9536f99b"]
+            AssignPublicIp: "DISABLED"
+# automatic rollback on fail            
+# Hooks:
+#   - BeforeInstall: "LambdaFunctionToValidateBeforeInstall"
+#   - AfterInstall: "LambdaFunctionToValidateAfterTraffic"
+#   - AfterAllowTestTraffic: "LambdaFunctionToValidateAfterTestTrafficStarts"
+#   - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeAllowingProductionTraffic"
+#   - AfterAllowTraffic: "LambdaFunctionToValidateAfterAllowingProductionTraffic"

@@ -1,0 +1,346 @@
+{
+    "states": [ {
+        "name": "Alaska",
+        "abbrev": "AK",
+        "counties": ["Anchorage"]
+    }, {
+        "name": "Alabama",
+        "abbrev": "AL",
+        "counties": ["Baldwin", "Calhoun", "Chambers", "Coffee", "Dale", "Elmore", "Etowah", "Houston", "Jefferson", "Lauderdale", "Lee", "Limestone", "Madison", "Marshall", "Mobile", "Montgomery", "Shelby", "St. Clair", "Tuscaloosa", "Walker"]
+    }, {
+        "name": "Arkansas",
+        "abbrev": "AR",
+        "counties": ["Benton", "Craighead", "Crawford", "Crittenden", "Faulkner", "Garland", "Lonoke", "Pulaski", "Saline", "Sebastian", "Washington", "White"]
+    }, {
+        "name": "Arizona",
+        "abbrev": "AZ",
+        "counties": ["Cochise", "Coconino", "Graham", "Maricopa", "Mohave", "Navajo", "Pima", "Pinal", "Santa Cruz", "Yavapai", "Yuma"]
+    }, {
+        "name": "California",
+        "abbrev": "CA",
+        "counties": ["Alameda", "Butte", "Calaveras", "Contra Costa", "El Dorado", "Fresno", "Humboldt", "Imperial", "Kern", "Kings", "Lake", "Los Angeles", "Madera", "Marin", "Mendocino", "Merced", "Monterey", "Napa", "Nevada", "Orange", "Placer", "Riverside", "Sacramento", "San Bernardino", "San Diego", "San Francisco", "San Joaquin", "San Luis Obispo", "San Mateo", "Santa Barbara", "Santa Clara", "Santa Cruz", "Shasta", "Solano", "Sonoma", "Stanislaus", "Sutter", "Tehama", "Tulare", "Ventura", "Yolo", "Yuba"]
+    }, {
+        "name": "Colorado",
+        "abbrev": "CO",
+        "counties": ["Adams", "Arapahoe", "Boulder", "Broomfield", "Chaffee", "Delta", "Denver", "Douglas", "Eagle", "El Paso", "Fremont", "Garfield", "Grand", "Jefferson", "La Plata", "Larimer", "Mesa", "Morgan", "Pueblo", "Routt", "Summit", "Teller", "Weld"]
+    }, {
+        "name": "Connecticut",
+        "abbrev": "CT",
+        "counties": ["Fairfield", "Hartford", "Litchfield", "Middlesex", "New Haven", "New London", "Tolland", "Windham"]
+    }, {
+        "name": "DC",
+        "abbrev": "DC",
+        "counties": ["DC"]
+    }, {
+        "name": "Delaware",
+        "abbrev": "DE",
+        "counties": ["Kent", "New Castle", "Sussex"]
+    }, {
+        "name": "Florida",
+        "abbrev": "FL",
+        "counties": ["Alachua", "Bay", "Brevard", "Broward", "Charlotte", "Citrus", "Clay", "Collier", "Columbia", "Duval", "Escambia", "Flagler", "Hernando", "Highlands", "Hillsborough", "Indian River", "Lake", "Lee", "Leon", "Manatee", "Marion", "Martin", "Miami-Dade", "Monroe", "Nassau", "Okaloosa", "Orange", "Osceola", "Palm Beach", "Pasco", "Pinellas", "Polk", "Putnam", "Santa Rosa", "Sarasota", "Seminole", "St. Johns", "St. Lucie", "Sumter", "Volusia", "Wakulla", "Walton"]
+    }, {
+        "name": "Georgia",
+        "abbrev": "GA",
+        "counties": ["Baldwin", "Barrow", "Bartow", "Ben Hill", "Bibb", "Bryan", "Camden", "Carroll", "Catoosa", "Chatham", "Cherokee", "Clarke", "Clayton", "Cobb", "Coffee", "Colquitt", "Columbia", "Coweta", "Dawson", "DeKalb", "Dougherty", "Douglas", "Effingham", "Elbert", "Emanuel", "Fannin", "Fayette", "Floyd", "Forsyth", "Fulton", "Gilmer", "Glynn", "Gordon", "Grady", "Greene", "Gwinnett", "Habersham", "Hall", "Haralson", "Harris", "Hart", "Henry", "Houston", "Jackson", "Laurens", "Lee", "Liberty", "Long", "Lowndes", "Madison", "McDuffie", "McIntosh", "Mitchell", "Monroe", "Morgan", "Murray", "Muscogee", "Newton", "Oconee", "Paulding", "Peach", "Pickens", "Pierce", "Polk", "Putnam", "Richmond", "Rockdale", "Spalding", "Stephens", "Sumter", "Tattnall", "Telfair", "Thomas", "Tift", "Towns", "Troup", "Union", "Walker", "Walton", "Wayne", "White", "Whitfield"]
+    }, {
+        "name": "Hawaii",
+        "abbrev": "HI",
+        "counties": ["Hawaii", "Honolulu", "Maui"]
+    }, {
+        "name": "Iowa",
+        "abbrev": "IA",
+        "counties": ["Black Hawk", "Cerro Gordo", "Clinton", "Dallas", "Des Moines", "Dubuque", "Johnson", "Linn", "Polk", "Pottawattamie", "Scott", "Story", "Warren", "Webster", "Woodbury"]
+    }, {
+        "name": "Idaho",
+        "abbrev": "ID",
+        "counties": ["Ada", "Bannock", "Bonner", "Bonneville", "Canyon", "Elmore", "Kootenai", "Twin Falls"]
+    }, {
+        "name": "Illinois",
+        "abbrev": "IL",
+        "counties": ["Adams", "Boone", "Champaign", "Cook", "DeKalb", "DuPage", "Kane", "Kankakee", "Kendall", "Lake", "Lee", "Macon", "Madison", "McHenry", "McLean", "Peoria", "Rock Island", "Sangamon", "St. Clair", "Tazewell", "Vermilion", "Whiteside", "Will", "Winnebago"]
+    }, {
+        "name": "Indiana",
+        "abbrev": "IN",
+        "counties": ["Allen", "Bartholomew", "Boone", "Clark", "Clinton", "Dearborn", "Decatur", "DeKalb", "Delaware", "Elkhart", "Floyd", "Gibson", "Grant", "Hamilton", "Hancock", "Hendricks", "Henry", "Jackson", "Johnson", "Kosciusko", "Lake", "LaPorte", "Lawrence", "Madison", "Marion", "Marshall", "Monroe", "Montgomery", "Morgan", "Porter", "Scott", "Shelby", "St. Joseph", "Steuben", "Tippecanoe", "Vanderburgh", "Vigo", "Wabash", "Warrick", "Wayne", "Wells"]
+    }, {
+        "name": "Kansas",
+        "abbrev": "KS",
+        "counties": ["Butler", "Doniphan", "Johnson", "Sedgwick", "Wyandotte"]
+    }, {
+        "name": "Kentucky",
+        "abbrev": "KY",
+        "counties": ["Anderson", "Boone", "Boyle", "Campbell", "Christian", "Fayette", "Franklin", "Greenup", "Hardin", "Henderson", "Hopkins", "Jefferson", "Jessamine", "Kenton", "Madison", "Nelson", "Oldham", "Scott", "Shelby", "Warren"]
+    }, {
+        "name": "Louisiana",
+        "abbrev": "LA",
+        "counties": ["Ascension", "Bossier", "Caddo", "Calcasieu", "East Baton Rouge", "Jefferson", "Lafayette", "Lafourche", "Livingston", "Orleans", "Ouachita", "Rapides", "St. Bernard", "St. Charles", "St. Martin", "St. Tammany", "Tangipahoa", "Terrebonne"]
+    }, {
+        "name": "Massachusetts",
+        "abbrev": "MA",
+        "counties": ["Barnstable", "Berkshire", "Bristol", "Essex", "Hampden", "Hampshire", "Middlesex", "Norfolk", "Plymouth", "Suffolk", "Worcester"]
+    }, {
+        "name": "Maryland",
+        "abbrev": "MD",
+        "counties": ["Allegany", "Anne Arundel", "Baltimore", "Calvert", "Caroline", "Carroll", "Cecil", "Charles", "Dorchester", "Frederick", "Harford", "Howard", "Montgomery", "Prince George's", "Queen Anne's", "St. Mary's", "Washington", "Wicomico", "Worcester"]
+    }, {
+        "name": "Maine",
+        "abbrev": "ME",
+        "counties": ["Cumberland", "Kennebec", "York"]
+    }, {
+        "name": "Michigan",
+        "abbrev": "MI",
+        "counties": ["Allegan", "Barry", "Bay", "Berrien", "Branch", "Calhoun", "Eaton", "Emmet", "Genesee", "Ingham", "Iosco", "Jackson", "Kalamazoo", "Kent", "Lapeer", "Lenawee", "Livingston", "Macomb", "Midland", "Monroe", "Muskegon", "Oakland", "Ottawa", "Saginaw", "Shiawassee", "St. Clair", "Tuscola", "Van Buren", "Washtenaw", "Wayne"]
+    }, {
+        "name": "Minnesota",
+        "abbrev": "MN",
+        "counties": ["Anoka", "Blue Earth", "Carver", "Clay", "Dakota", "Douglas", "Hennepin", "Isanti", "McLeod", "Mower", "Olmsted", "Ramsey", "Rice", "Scott", "Sherburne", "St. Louis", "Stearns", "Washington", "Winona", "Wright"]
+    }, {
+        "name": "Missouri",
+        "abbrev": "MO",
+        "counties": ["Andrew", "Bates", "Boone", "Buchanan", "Butler", "Callaway", "Cape Girardeau", "Cass", "Christian", "Clay", "Cole", "Franklin", "Greene", "Jackson", "Jasper", "Jefferson", "Johnson", "Lafayette", "Lincoln", "Platte", "St. Charles", "St. Louis", "Stone", "Taney", "Webster"]
+    }, {
+        "name": "Mississippi",
+        "abbrev": "MS",
+        "counties": ["DeSoto", "Forrest", "Harrison", "Jackson", "Lafayette", "Lamar", "Lowndes", "Madison"]
+    }, {
+        "name": "Montana",
+        "abbrev": "MT",
+        "counties": ["Cascade", "Flathead", "Gallatin", "Missoula", "Yellowstone"]
+    }, {
+        "name": "North Carolina",
+        "abbrev": "NC",
+        "counties": ["Alamance", "Brunswick", "Buncombe", "Burke", "Cabarrus", "Caldwell", "Carteret", "Catawba", "Chatham", "Cleveland", "Craven", "Dare", "Davidson", "Davie", "Duplin", "Durham", "Edgecombe", "Forsyth", "Franklin", "Gaston", "Granville", "Guilford", "Harnett", "Haywood", "Henderson", "Hoke", "Iredell", "Johnston", "Lee", "Lincoln", "Mecklenburg", "Moore", "Nash", "New Hanover", "Onslow", "Orange", "Pender", "Person", "Pitt", "Randolph", "Rockingham", "Rowan", "Rutherford", "Sampson", "Stanly", "Stokes", "Surry", "Union", "Wake", "Watauga", "Wayne", "Wilson"]
+    }, {
+        "name": "North Dakota",
+        "abbrev": "ND",
+        "counties": ["Burleigh", "Cass", "Ward", "Williams"]
+    }, {
+        "name": "Nebraska",
+        "abbrev": "NE",
+        "counties": ["Cass", "Douglas", "Hall", "Lancaster", "Platte", "Sarpy"]
+    }, {
+        "name": "New Hampshire",
+        "abbrev": "NH",
+        "counties": ["Belknap", "Cheshire", "Grafton", "Hillsborough", "Merrimack", "Rockingham", "Strafford"]
+    }, {
+        "name": "New Jersey",
+        "abbrev": "NJ",
+        "counties": ["Atlantic", "Bergen", "Burlington", "Camden", "Cape May", "Cumberland", "Essex", "Gloucester", "Hudson", "Hunterdon", "Mercer", "Middlesex", "Monmouth", "Morris", "Ocean", "Passaic", "Salem", "Somerset", "Sussex", "Union", "Warren"]
+    }, {
+        "name": "New Mexico",
+        "abbrev": "NM",
+        "counties": ["Bernalillo", "Doña Ana", "Eddy", "Lea", "Lincoln", "San Juan"]
+    }, {
+        "name": "Nevada",
+        "abbrev": "NV",
+        "counties": ["Carson City", "Churchill", "Clark", "Douglas", "Elko", "Lyon", "Nye", "Washoe"]
+    }, {
+        "name": "New York",
+        "abbrev": "NY",
+        "counties": ["Albany", "Bronx", "Broome", "Cayuga", "Chemung", "Clinton", "Delaware", "Dutchess", "Erie", "Fulton", "Genesee", "Jefferson", "Kings", "Livingston", "Monroe", "Montgomery", "Nassau", "New York", "Niagara", "Oneida", "Onondaga", "Ontario", "Orange", "Orleans", "Putnam", "Queens", "Rensselaer", "Richmond", "Rockland", "Saratoga", "Schenectady", "Steuben", "Suffolk", "Sullivan", "Ulster", "Washington", "Wayne", "Westchester"]
+    }, {
+        "name": "Ohio",
+        "abbrev": "OH",
+        "counties": ["Allen", "Ashtabula", "Auglaize", "Butler", "Champaign", "Clark", "Clermont", "Clinton", "Columbiana", "Coshocton", "Crawford", "Cuyahoga", "Darke", "Defiance", "Delaware", "Erie", "Fairfield", "Fayette", "Franklin", "Gallia", "Geauga", "Greene", "Guernsey", "Hamilton", "Hancock", "Hardin", "Hocking", "Jackson", "Knox", "Lake", "Licking", "Logan", "Lorain", "Lucas", "Madison", "Mahoning", "Marion", "Medina", "Mercer", "Miami", "Montgomery", "Morrow", "Muskingum", "Paulding", "Pickaway", "Pike", "Portage", "Preble", "Richland", "Ross", "Sandusky", "Scioto", "Seneca", "Stark", "Summit", "Trumbull", "Tuscarawas", "Union", "Van Wert", "Warren", "Wayne", "Wood"]
+    }, {
+        "name": "Oklahoma",
+        "abbrev": "OK",
+        "counties": ["Bryan", "Canadian", "Carter", "Cherokee", "Cleveland", "Comanche", "Creek", "Garfield", "Kay", "Le Flore", "McClain", "Muskogee", "Oklahoma", "Osage", "Ottawa", "Payne", "Pittsburg", "Pontotoc", "Pottawatomie", "Rogers", "Tulsa", "Wagoner", "Washington"]
+    }, {
+        "name": "Oregon",
+        "abbrev": "OR",
+        "counties": ["Clackamas", "Clatsop", "Columbia", "Coos", "Crook", "Deschutes", "Douglas", "Jackson", "Josephine", "Klamath", "Lane", "Lincoln", "Linn", "Marion", "Multnomah", "Polk", "Washington", "Yamhill"]
+    }, {
+        "name": "Pennsylvania",
+        "abbrev": "PA",
+        "counties": ["Adams", "Allegheny", "Beaver", "Berks", "Blair", "Bucks", "Butler", "Cambria", "Carbon", "Centre", "Chester", "Clearfield", "Columbia", "Cumberland", "Dauphin", "Delaware", "Erie", "Fayette", "Franklin", "Lackawanna", "Lancaster", "Lawrence", "Lebanon", "Lehigh", "Luzerne", "Lycoming", "Mercer", "Monroe", "Montgomery", "Northampton", "Northumberland", "Philadelphia", "Pike", "Washington", "Wayne", "Westmoreland", "York"]
+    }, {
+        "name": "Rhode Island",
+        "abbrev": "RI",
+        "counties": ["Bristol", "Kent", "Newport", "Providence", "Washington"]
+    }, {
+        "name": "South Carolina",
+        "abbrev": "SC",
+        "counties": ["Aiken", "Anderson", "Beaufort", "Berkeley", "Charleston", "Darlington", "Dorchester", "Edgefield", "Florence", "Georgetown", "Greenville", "Horry", "Kershaw", "Lancaster", "Laurens", "Lexington", "Oconee", "Orangeburg", "Pickens", "Richland", "Spartanburg", "Sumter", "York"]
+    }, {
+        "name": "South Dakota",
+        "abbrev": "SD",
+        "counties": ["Minnehaha"]
+    }, {
+        "name": "Tennessee",
+        "abbrev": "TN",
+        "counties": ["Anderson", "Bedford", "Blount", "Bradley", "Campbell", "Carroll", "Carter", "Cheatham", "Claiborne", "Coffee", "Cumberland", "Davidson", "DeKalb", "Dickson", "Dyer", "Fayette", "Franklin", "Gibson", "Giles", "Greene", "Hamblen", "Hamilton", "Hardin", "Hawkins", "Henry", "Hickman", "Jefferson", "Knox", "Lawrence", "Lincoln", "Loudon", "Macon", "Madison", "Marion", "Marshall", "Maury", "McMinn", "McNairy", "Monroe", "Montgomery", "Obion", "Overton", "Polk", "Putnam", "Rhea", "Roane", "Robertson", "Rutherford", "Scott", "Sevier", "Shelby", "Smith", "Sullivan", "Sumner", "Tipton", "Warren", "Washington", "Weakley", "White", "Williamson", "Wilson"]
+    }, {
+        "name": "Texas",
+        "abbrev": "TX",
+        "counties": ["Bastrop", "Bell", "Bexar", "Brazoria", "Brazos", "Burnet", "Cameron", "Chambers", "Collin", "Comal", "Coryell", "Dallas", "Denton", "Ector", "El Paso", "Ellis", "Fort Bend", "Galveston", "Grayson", "Gregg", "Guadalupe", "Harris", "Hays", "Henderson", "Hidalgo", "Hood", "Hunt", "Jefferson", "Johnson", "Kaufman", "Liberty", "Lubbock", "McLennan", "Midland", "Montgomery", "Navarro", "Nueces", "Orange", "Parker", "Polk", "Potter", "Randall", "Rockwall", "San Jacinto", "San Patricio", "Smith", "Tarrant", "Taylor", "Tom Green", "Travis", "Victoria", "Webb", "Williamson"]
+    }, {
+        "name": "Utah",
+        "abbrev": "UT",
+        "counties": ["Box Elder", "Cache", "Davis", "Salt Lake", "Tooele", "Utah", "Washington", "Weber"]
+    }, {
+        "name": "Virginia",
+        "abbrev": "VA",
+        "counties": ["Albemarle", "Alexandria", "Arlington", "Augusta", "Caroline", "Chesapeake", "Chesterfield", "Culpeper", "Danville", "Fairfax", "Fauquier", "Franklin", "Frederick", "Fredericksburg", "Gloucester", "Greene", "Hampton", "Hanover", "Harrisonburg", "Henrico", "Henry", "James City", "Loudoun", "Louisa", "Manassas", "Nelson", "Newport News", "Norfolk", "Orange", "Pittsylvania", "Portsmouth", "Prince William", "Richmond", "Roanoke", "Rockingham", "Salem", "Shenandoah", "Spotsylvania", "Stafford", "Suffolk", "Virginia Beach", "Warren", "Westmoreland", "Winchester", "York"]
+    }, {
+        "name": "Vermont",
+        "abbrev": "VT",
+        "counties": ["Chittenden"]
+    }, {
+        "name": "Washington",
+        "abbrev": "WA",
+        "counties": ["Benton", "Chelan", "Clark", "Cowlitz", "Franklin", "Grant", "Grays Harbor", "Island", "King", "Kitsap", "Lewis", "Mason", "Pierce", "Skagit", "Snohomish", "Spokane", "Thurston", "Walla Walla", "Whatcom", "Yakima"]
+    }, {
+        "name": "Wisconsin",
+        "abbrev": "WI",
+        "counties": ["Adams", "Brown", "Chippewa", "Dane", "Dodge", "Door", "Douglas", "Eau Claire", "Fond du Lac", "Grant", "Jefferson", "Juneau", "Kenosha", "La Crosse", "Manitowoc", "Marathon", "Marinette", "Milwaukee", "Oneida", "Outagamie", "Ozaukee", "Pierce", "Polk", "Racine", "Rock", "Sauk", "Sheboygan", "St. Croix", "Vilas", "Walworth", "Washington", "Waukesha", "Waupaca", "Winnebago", "Wood"]
+    }, {
+        "name": "West Virginia",
+        "abbrev": "WV",
+        "counties": ["Jefferson", "Monongalia", "Wood"]
+    }, {
+        "name": "Wyoming",
+        "abbrev": "WY",
+        "counties": ["Laramie", "Natrona"]
+    }],
+
+    "counties": [
+        "Anchorage",
+        "Baldwin", "Calhoun", "Chambers", "Coffee", "Dale", "Elmore", "Etowah", "Houston", "Jefferson", "Lauderdale", "Lee", "Limestone", "Madison", "Marshall", "Mobile", "Montgomery", "Shelby", "St. Clair", "Tuscaloosa", "Walker",
+        "Benton", "Craighead", "Crawford", "Crittenden", "Faulkner", "Garland", "Lonoke", "Pulaski", "Saline", "Sebastian", "Washington", "White",
+        "Cochise", "Coconino", "Graham", "Maricopa", "Mohave", "Navajo", "Pima", "Pinal", "Santa Cruz", "Yavapai", "Yuma",
+        "Alameda", "Butte", "Calaveras", "Contra Costa", "El Dorado", "Fresno", "Humboldt", "Imperial", "Kern", "Kings", "Lake", "Los Angeles", "Madera", "Marin", "Mendocino", "Merced", "Monterey", "Napa", "Nevada", "Orange", "Placer", "Riverside", "Sacramento", "San Bernardino", "San Diego", "San Francisco", "San Joaquin", "San Luis Obispo", "San Mateo", "Santa Barbara", "Santa Clara", "Santa Cruz", "Shasta", "Solano", "Sonoma", "Stanislaus", "Sutter", "Tehama", "Tulare", "Ventura", "Yolo", "Yuba",
+        "Adams", "Arapahoe", "Boulder", "Broomfield", "Chaffee", "Delta", "Denver", "Douglas", "Eagle", "El Paso", "Fremont", "Garfield", "Grand", "Jefferson", "La Plata", "Larimer", "Mesa", "Morgan", "Pueblo", "Routt", "Summit", "Teller", "Weld",
+        "Fairfield", "Hartford", "Litchfield", "Middlesex", "New Haven", "New London", "Tolland", "Windham",
+        "DC",
+        "Kent", "New Castle", "Sussex",
+        "Alachua", "Bay", "Brevard", "Broward", "Charlotte", "Citrus", "Clay", "Collier", "Columbia", "Duval", "Escambia", "Flagler", "Hernando", "Highlands", "Hillsborough", "Indian River", "Lake", "Lee", "Leon", "Manatee", "Marion", "Martin", "Miami-Dade", "Monroe", "Nassau", "Okaloosa", "Orange", "Osceola", "Palm Beach", "Pasco", "Pinellas", "Polk", "Putnam", "Santa Rosa", "Sarasota", "Seminole", "St. Johns", "St. Lucie", "Sumter", "Volusia", "Wakulla", "Walton",
+        "Baldwin", "Barrow", "Bartow", "Ben Hill", "Bibb", "Bryan", "Camden", "Carroll", "Catoosa", "Chatham", "Cherokee", "Clarke", "Clayton", "Cobb", "Coffee", "Colquitt", "Columbia", "Coweta", "Dawson", "DeKalb", "Dougherty", "Douglas", "Effingham", "Elbert", "Emanuel", "Fannin", "Fayette", "Floyd", "Forsyth", "Fulton", "Gilmer", "Glynn", "Gordon", "Grady", "Greene", "Gwinnett", "Habersham", "Hall", "Haralson", "Harris", "Hart", "Henry", "Houston", "Jackson", "Laurens", "Lee", "Liberty", "Long", "Lowndes", "Madison", "McDuffie", "McIntosh", "Mitchell", "Monroe", "Morgan", "Murray", "Muscogee", "Newton", "Oconee", "Paulding", "Peach", "Pickens", "Pierce", "Polk", "Putnam", "Richmond", "Rockdale", "Spalding", "Stephens", "Sumter", "Tattnall", "Telfair", "Thomas", "Tift", "Towns", "Troup", "Union", "Walker", "Walton", "Wayne", "White", "Whitfield",
+        "Hawaii", "Honolulu", "Maui",
+        "Black Hawk", "Cerro Gordo", "Clinton", "Dallas", "Des Moines", "Dubuque", "Johnson", "Linn", "Polk", "Pottawattamie", "Scott", "Story", "Warren", "Webster", "Woodbury",
+        "Ada", "Bannock", "Bonner", "Bonneville", "Canyon", "Elmore", "Kootenai", "Twin Falls",
+        "Adams", "Boone", "Champaign", "Cook", "DeKalb", "DuPage", "Kane", "Kankakee", "Kendall", "Lake", "Lee", "Macon", "Madison", "McHenry", "McLean", "Peoria", "Rock Island", "Sangamon", "St. Clair", "Tazewell", "Vermilion", "Whiteside", "Will", "Winnebago",
+        "Allen", "Bartholomew", "Boone", "Clark", "Clinton", "Dearborn", "Decatur", "DeKalb", "Delaware", "Elkhart", "Floyd", "Gibson", "Grant", "Hamilton", "Hancock", "Hendricks", "Henry", "Jackson", "Johnson", "Kosciusko", "Lake", "LaPorte", "Lawrence", "Madison", "Marion", "Marshall", "Monroe", "Montgomery", "Morgan", "Porter", "Scott", "Shelby", "St. Joseph", "Steuben", "Tippecanoe", "Vanderburgh", "Vigo", "Wabash", "Warrick", "Wayne", "Wells",
+        "Butler", "Doniphan", "Johnson", "Sedgwick", "Wyandotte",
+        "Anderson", "Boone", "Boyle", "Campbell", "Christian", "Fayette", "Franklin", "Greenup", "Hardin", "Henderson", "Hopkins", "Jefferson", "Jessamine", "Kenton", "Madison", "Nelson", "Oldham", "Scott", "Shelby", "Warren",
+        "Ascension", "Bossier", "Caddo", "Calcasieu", "East Baton Rouge", "Jefferson", "Lafayette", "Lafourche", "Livingston", "Orleans", "Ouachita", "Rapides", "St. Bernard", "St. Charles", "St. Martin", "St. Tammany", "Tangipahoa", "Terrebonne",
+        "Barnstable", "Berkshire", "Bristol", "Essex", "Hampden", "Hampshire", "Middlesex", "Norfolk", "Plymouth", "Suffolk", "Worcester",
+        "Allegany", "Anne Arundel", "Baltimore", "Calvert", "Caroline", "Carroll", "Cecil", "Charles", "Dorchester", "Frederick", "Harford", "Howard", "Montgomery", "Prince George's", "Queen Anne's", "St. Mary's", "Washington", "Wicomico", "Worcester",
+        "Cumberland", "Kennebec", "York",
+        "Allegan", "Barry", "Bay", "Berrien", "Branch", "Calhoun", "Eaton", "Emmet", "Genesee", "Ingham", "Iosco", "Jackson", "Kalamazoo", "Kent", "Lapeer", "Lenawee", "Livingston", "Macomb", "Midland", "Monroe", "Muskegon", "Oakland", "Ottawa", "Saginaw", "Shiawassee", "St. Clair", "Tuscola", "Van Buren", "Washtenaw", "Wayne",
+        "Anoka", "Blue Earth", "Carver", "Clay", "Dakota", "Douglas", "Hennepin", "Isanti", "McLeod", "Mower", "Olmsted", "Ramsey", "Rice", "Scott", "Sherburne", "St. Louis", "Stearns", "Washington", "Winona", "Wright",
+        "Andrew", "Bates", "Boone", "Buchanan", "Butler", "Callaway", "Cape Girardeau", "Cass", "Christian", "Clay", "Cole", "Franklin", "Greene", "Jackson", "Jasper", "Jefferson", "Johnson", "Lafayette", "Lincoln", "Platte", "St. Charles", "St. Louis", "Stone", "Taney", "Webster",
+        "DeSoto", "Forrest", "Harrison", "Jackson", "Lafayette", "Lamar", "Lowndes", "Madison",
+        "Cascade", "Flathead", "Gallatin", "Missoula", "Yellowstone",
+        "Alamance", "Brunswick", "Buncombe", "Burke", "Cabarrus", "Caldwell", "Carteret", "Catawba", "Chatham", "Cleveland", "Craven", "Dare", "Davidson", "Davie", "Duplin", "Durham", "Edgecombe", "Forsyth", "Franklin", "Gaston", "Granville", "Guilford", "Harnett", "Haywood", "Henderson", "Hoke", "Iredell", "Johnston", "Lee", "Lincoln", "Mecklenburg", "Moore", "Nash", "New Hanover", "Onslow", "Orange", "Pender", "Person", "Pitt", "Randolph", "Rockingham", "Rowan", "Rutherford", "Sampson", "Stanly", "Stokes", "Surry", "Union", "Wake", "Watauga", "Wayne", "Wilson",
+        "Burleigh", "Cass", "Ward", "Williams",
+        "Cass", "Douglas", "Hall", "Lancaster", "Platte", "Sarpy",
+        "Belknap", "Cheshire", "Grafton", "Hillsborough", "Merrimack", "Rockingham", "Strafford",
+        "Atlantic", "Bergen", "Burlington", "Camden", "Cape May", "Cumberland", "Essex", "Gloucester", "Hudson", "Hunterdon", "Mercer", "Middlesex", "Monmouth", "Morris", "Ocean", "Passaic", "Salem", "Somerset", "Sussex", "Union", "Warren",
+        "Bernalillo", "Doña Ana", "Eddy", "Lea", "Lincoln", "San Juan",
+        "Carson City", "Churchill", "Clark", "Douglas", "Elko", "Lyon", "Nye", "Washoe",
+        "Albany", "Bronx", "Broome", "Cayuga", "Chemung", "Clinton", "Delaware", "Dutchess", "Erie", "Fulton", "Genesee", "Jefferson", "Kings", "Livingston", "Monroe", "Montgomery", "Nassau", "New York", "Niagara", "Oneida", "Onondaga", "Ontario", "Orange", "Orleans", "Putnam", "Queens", "Rensselaer", "Richmond", "Rockland", "Saratoga", "Schenectady", "Steuben", "Suffolk", "Sullivan", "Ulster", "Washington", "Wayne", "Westchester",
+        "Allen", "Ashtabula", "Auglaize", "Butler", "Champaign", "Clark", "Clermont", "Clinton", "Columbiana", "Coshocton", "Crawford", "Cuyahoga", "Darke", "Defiance", "Delaware", "Erie", "Fairfield", "Fayette", "Franklin", "Gallia", "Geauga", "Greene", "Guernsey", "Hamilton", "Hancock", "Hardin", "Hocking", "Jackson", "Knox", "Lake", "Licking", "Logan", "Lorain", "Lucas", "Madison", "Mahoning", "Marion", "Medina", "Mercer", "Miami", "Montgomery", "Morrow", "Muskingum", "Paulding", "Pickaway", "Pike", "Portage", "Preble", "Richland", "Ross", "Sandusky", "Scioto", "Seneca", "Stark", "Summit", "Trumbull", "Tuscarawas", "Union", "Van Wert", "Warren", "Wayne", "Wood",
+        "Bryan", "Canadian", "Carter", "Cherokee", "Cleveland", "Comanche", "Creek", "Garfield", "Kay", "Le Flore", "McClain", "Muskogee", "Oklahoma", "Osage", "Ottawa", "Payne", "Pittsburg", "Pontotoc", "Pottawatomie", "Rogers", "Tulsa", "Wagoner", "Washington",
+        "Clackamas", "Clatsop", "Columbia", "Coos", "Crook", "Deschutes", "Douglas", "Jackson", "Josephine", "Klamath", "Lane", "Lincoln", "Linn", "Marion", "Multnomah", "Polk", "Washington", "Yamhill",
+        "Adams", "Allegheny", "Beaver", "Berks", "Blair", "Bucks", "Butler", "Cambria", "Carbon", "Centre", "Chester", "Clearfield", "Columbia", "Cumberland", "Dauphin", "Delaware", "Erie", "Fayette", "Franklin", "Lackawanna", "Lancaster", "Lawrence", "Lebanon", "Lehigh", "Luzerne", "Lycoming", "Mercer", "Monroe", "Montgomery", "Northampton", "Northumberland", "Philadelphia", "Pike", "Washington", "Wayne", "Westmoreland", "York",
+        "Bristol", "Kent", "Newport", "Providence", "Washington",
+        "Aiken", "Anderson", "Beaufort", "Berkeley", "Charleston", "Darlington", "Dorchester", "Edgefield", "Florence", "Georgetown", "Greenville", "Horry", "Kershaw", "Lancaster", "Laurens", "Lexington", "Oconee", "Orangeburg", "Pickens", "Richland", "Spartanburg", "Sumter", "York",
+        "Minnehaha",
+        "Anderson", "Bedford", "Blount", "Bradley", "Campbell", "Carroll", "Carter", "Cheatham", "Claiborne", "Coffee", "Cumberland", "Davidson", "DeKalb", "Dickson", "Dyer", "Fayette", "Franklin", "Gibson", "Giles", "Greene", "Hamblen", "Hamilton", "Hardin", "Hawkins", "Henry", "Hickman", "Jefferson", "Knox", "Lawrence", "Lincoln", "Loudon", "Macon", "Madison", "Marion", "Marshall", "Maury", "McMinn", "McNairy", "Monroe", "Montgomery", "Obion", "Overton", "Polk", "Putnam", "Rhea", "Roane", "Robertson", "Rutherford", "Scott", "Sevier", "Shelby", "Smith", "Sullivan", "Sumner", "Tipton", "Warren", "Washington", "Weakley", "White", "Williamson", "Wilson",
+        "Bastrop", "Bell", "Bexar", "Brazoria", "Brazos", "Burnet", "Cameron", "Chambers", "Collin", "Comal", "Coryell", "Dallas", "Denton", "Ector", "El Paso", "Ellis", "Fort Bend", "Galveston", "Grayson", "Gregg", "Guadalupe", "Harris", "Hays", "Henderson", "Hidalgo", "Hood", "Hunt", "Jefferson", "Johnson", "Kaufman", "Liberty", "Lubbock", "McLennan", "Midland", "Montgomery", "Navarro", "Nueces", "Orange", "Parker", "Polk", "Potter", "Randall", "Rockwall", "San Jacinto", "San Patricio", "Smith", "Tarrant", "Taylor", "Tom Green", "Travis", "Victoria", "Webb", "Williamson",
+        "Box Elder", "Cache", "Davis", "Salt Lake", "Tooele", "Utah", "Washington", "Weber",
+        "Albemarle", "Alexandria", "Arlington", "Augusta", "Caroline", "Chesapeake", "Chesterfield", "Culpeper", "Danville", "Fairfax", "Fauquier", "Franklin", "Frederick", "Fredericksburg", "Gloucester", "Greene", "Hampton", "Hanover", "Harrisonburg", "Henrico", "Henry", "James City", "Loudoun", "Louisa", "Manassas", "Nelson", "Newport News", "Norfolk", "Orange", "Pittsylvania", "Portsmouth", "Prince William", "Richmond", "Roanoke", "Rockingham", "Salem", "Shenandoah", "Spotsylvania", "Stafford", "Suffolk", "Virginia Beach", "Warren", "Westmoreland", "Winchester", "York",
+        "Chittenden",
+        "Benton", "Chelan", "Clark", "Cowlitz", "Franklin", "Grant", "Grays Harbor", "Island", "King", "Kitsap", "Lewis", "Mason", "Pierce", "Skagit", "Snohomish", "Spokane", "Thurston", "Walla Walla", "Whatcom", "Yakima",
+        "Adams", "Brown", "Chippewa", "Dane", "Dodge", "Door", "Douglas", "Eau Claire", "Fond du Lac", "Grant", "Jefferson", "Juneau", "Kenosha", "La Crosse", "Manitowoc", "Marathon", "Marinette", "Milwaukee", "Oneida", "Outagamie", "Ozaukee", "Pierce", "Polk", "Racine", "Rock", "Sauk", "Sheboygan", "St. Croix", "Vilas", "Walworth", "Washington", "Waukesha", "Waupaca", "Winnebago", "Wood",
+        "Jefferson", "Monongalia", "Wood",
+        "Laramie", "Natrona"
+    ],
+
+    "countyAliases": [{
+        "name": "DC",
+        "aliases": ["D.C.", "District of Columbia", "Washington DC", "Washington D.C."]
+    }, {
+        "name": "Prince George's",
+        "aliases": ["Prince Georges", "Prince George"]
+    }, {
+        "name": "Queen Anne's",
+        "aliases": ["Queen Annes", "Queen Anne"]
+    }, {
+        "name": "St. Bernard",
+        "aliases": ["Saint Bernard", "St Bernard"]
+    }, {
+        "name": "St. Charles",
+        "aliases": ["Saint Charles", "St Charles"]
+    }, {
+        "name": "St. Croix",
+        "aliases": ["Saint Croix", "St Croix"]
+    }, {
+        "name": "St. Martin",
+        "aliases": ["Saint Martin", "St Martin"]
+    }, {
+        "name": "St. Tammany",
+        "aliases": ["Saint Tammany", "St Tammany"]
+    }, {
+        "name": "St. Mary's",
+        "aliases": ["Saint Mary's", "Saint Marys", "St Mary's", "St Marys", "St Mary", "Saint Mary"]
+    }, {
+        "name": "St. Johns",
+        "aliases": ["Saint Johns", "St Johns"]
+    }, {
+        "name": "St. Joseph",
+        "aliases": ["Saint Joseph", "St Joseph"]
+    }, {
+        "name": "St. Lucie",
+        "aliases": ["Saint Lucie", "St Lucie"]
+    }, {
+        "name": "St. Louis",
+        "aliases": ["Saint Louis", "St Louis"]
+    }, {
+        "name": "St. Clair",
+        "aliases": ["Saint Clair", "St Clair"]
+    }, {
+        "name": "East Baton Rouge",
+        "aliases": ["East Baton Rouge Parish"]
+    }, {
+        "name": "New York",
+        "aliases": ["Manhattan"]
+    }, {
+        "name": "Kings",
+        "aliases": ["Brooklyn"]
+    }, {
+        "name": "Bronx",
+        "aliases": ["The Bronx"]
+    }, {
+        "name": "Richmond",
+        "aliases": ["Staten Island"]
+    }, {
+        "name": "Doña Ana",
+        "aliases": ["Do a Ana", "Dona Ana", "Doa Ana"]
+    }],
+
+    "aliasesForCounties": {
+        "DC": ["D.C.", "District of Columbia", "Washington DC", "Washington D.C."],
+        "Prince George's": ["Prince Georges", "Prince George"],
+        "Queen Anne's": ["Queen Annes", "Queen Anne"],
+        "St. Bernard": ["Saint Bernard", "St Bernard"],
+        "St. Charles": ["Saint Charles", "St Charles"],
+        "St. Croix": ["Saint Croix", "St Croix"],
+        "St. Martin": ["Saint Martin", "St Martin"],
+        "St. Tammany": ["Saint Tammany", "St Tammany"],
+        "St. Mary's": ["Saint Mary's", "Saint Marys", "St Mary's", "St Marys", "St Mary", "Saint Mary"],
+        "St. Johns": ["Saint Johns", "St Johns"],
+        "St. Joseph": ["Saint Joseph", "St Joseph"],
+        "St. Lucie": ["Saint Lucie", "St Lucie"],
+        "St. Louis": ["Saint Louis", "St Louis"],
+        "St. Clair": ["Saint Clair", "St Clair"],
+        "East Baton Rouge": ["East Baton Rouge Parish"],
+        "New York": ["Manhattan"],
+        "Kings": ["Brooklyn"],
+        "Bronx": ["The Bronx"],
+        "Richmond": ["Staten Island"],
+        "Doña Ana": ["Do a Ana", "Dona Ana", "Doa Ana"]
+    }
+}

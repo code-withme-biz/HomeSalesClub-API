@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "incremental": true,                   /* Enable incremental compilation */
+    "sourceMap": true,                     /* Generates corresponding '.map' file. */
+  }
+}

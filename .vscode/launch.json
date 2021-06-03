@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Backend Debug",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/app.ts",
+      //"preLaunchTask": "tsc: build - tsconfig.dev.json",
+      "outFiles": [
+          "${workspaceFolder}/dist/**/*.js"
+        ]
+    }
+  ]
+}

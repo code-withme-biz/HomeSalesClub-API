@@ -1,0 +1,40 @@
+version: 0.2
+env:
+  variables:
+    IMAGE_REPO_NAME: "scrapetorium-api"
+    AWS_ACCOUNT_ID: "465464725359"
+    AWS_DEFAULT_REGION: "us-east-2"
+    REGION: "us-east-2"
+    SCRP_CONS_TASK_NAME: "hsc-api-fargate-td"
+    SCRP_PRODU_TASK_NAME: "hsc-api-fargate-td"
+phases:
+  pre_build:
+    commands:
+      - yum install jq -y
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+  build:
+    commands:
+      - echo "Nothing to build."
+  post_build:
+    commands:
+      - echo "Scheduled task deployment with latest image starts now."
+      # Consumer definition and CMD override with new task def id creation.  
+      - SCRP_CONS_DEF=$(aws ecs describe-task-definition --task-definition "$SCRP_CONS_TASK_NAME" --region "${REGION}")
+      - NEW_SCRP_CONS_DEF=$(echo $SCRP_CONS_DEF | jq '.taskDefinition | .containerDefinitions[0].command = [ "npm","run","consume" ] | del(.taskDefinitionArn) | del(.revision) | del(.status) | del(.requiresAttributes) | del(.compatibilities)')
+      - aws ecs register-task-definition --region "${REGION}" --cli-input-json "$NEW_SCRP_CONS_DEF"
+      - SCRP_CONS_DEF_REV=$(aws ecs describe-task-definition --task-definition "$SCRP_CONS_TASK_NAME" --region "${REGION}" | jq '.taskDefinition | .revision')
+      - |
+        aws events put-targets --region "${REGION}" --rule "scrapetorium-consumer-scheduled-task" --targets '{"Arn": "arn:aws:ecs:us-east-2:465464725359:cluster/homesalesclub-api-fargate-cluster", "EcsParameters": {"LaunchType": "FARGATE", "NetworkConfiguration": {"awsvpcConfiguration": {"AssignPublicIp": "ENABLED", "SecurityGroups": [ "sg-09479390e9536f99b" ], "Subnets": [ "subnet-0a170b9ea72e13392", "subnet-05cec7d77ed1cca8e", "subnet-0699902f2e889945c" ] }},"TaskCount": 10,"TaskDefinitionArn": "arn:aws:ecs:us-east-2:465464725359:task-definition/hsc-api-fargate-td:'$SCRP_CONS_DEF_REV'"},"Id": "consumer-target","RoleArn": "arn:aws:iam::465464725359:role/ecsTaskExecutionSQSandSNSRole"}'
+
+      # Producer definition and CMD override with new task def id creation.  
+      - SCRP_PRODU_DEF=$(aws ecs describe-task-definition --task-definition "$SCRP_PRODU_TASK_NAME" --region "${REGION}")
+      - NEW_SCRP_PRODU_DEF=$(echo $SCRP_PRODU_DEF | jq '.taskDefinition | .containerDefinitions[0].command = [ "npm","run","produce" ] | del(.taskDefinitionArn) | del(.revision) | del(.status) | del(.requiresAttributes) | del(.compatibilities)')
+      - aws ecs register-task-definition --region "${REGION}" --cli-input-json "$NEW_SCRP_PRODU_DEF"
+      - SCRP_PRODU_DEF_REV=$(aws ecs describe-task-definition --task-definition "$SCRP_PRODU_TASK_NAME" --region "${REGION}" | jq '.taskDefinition | .revision')
+      - |
+        aws events put-targets --region "${REGION}" --rule "scrapetorium-producer-scheduled-task" --targets '{"Arn": "arn:aws:ecs:us-east-2:465464725359:cluster/homesalesclub-api-fargate-cluster", "EcsParameters": {"LaunchType": "FARGATE", "NetworkConfiguration": {"awsvpcConfiguration": {"AssignPublicIp": "ENABLED", "SecurityGroups": [ "sg-09479390e9536f99b" ], "Subnets": [ "subnet-0a170b9ea72e13392", "subnet-05cec7d77ed1cca8e", "subnet-0699902f2e889945c" ] }},"TaskCount": 1,"TaskDefinitionArn": "arn:aws:ecs:us-east-2:465464725359:task-definition/hsc-api-fargate-td:'$SCRP_PRODU_DEF_REV'"},"Id": "scrapetorium-producer","RoleArn": "arn:aws:iam::465464725359:role/ecsTaskExecutionSQSandSNSRole"}'

@@ -1,0 +1,9 @@
+extend type Query {
+    signin(email: String!, password: String!): AuthResponse
+}
+
+type AuthResponse {
+    success: Boolean!
+    token: String
+    error: String
+}

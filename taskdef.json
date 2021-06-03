@@ -1,0 +1,185 @@
+{
+    "family": "hsc-api-fargate-td",
+    "TaskRoleArn": "arn:aws:iam::465464725359:role/ecsTaskRoleForSDKAPI",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "executionRoleArn": "arn:aws:iam::465464725359:role/ecsTaskExecutionRole",
+    "cpu": "1024",
+    "memory": "2048",
+    "containerDefinitions": [
+        {
+            "name": "homesalesclub-api",
+            "image": "<IMAGE1_NAME>",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "environment": [
+                {
+                    "name": "AWS_REGION",
+                    "value": "us-east-2"
+                },
+                {
+                    "name": "AWS_ACCOUNT_ID",
+                    "value": "465464725359"
+                },
+                {
+                    "name": "SQS_QUEUE_NAME",
+                    "value": "PRODUCTS_QUEUE"
+                },
+                {
+                    "name": "SQS_DEAD_LETTER_QUEUE_NAME",
+                    "value": "PRODUCTS_DEAD_LETTER_QUEUE"
+                },
+                {
+                    "name": "SQS_API_VERSION",
+                    "value": "2012-11-05" 
+                },
+                {
+                    "name": "SNS_PRODUCT_TOPIC_NAME",
+                    "value": "PRODUCTS_TOPIC"  
+                },
+                {
+                    "name": "SNS_CIVIL_TOPIC_NAME",
+                    "value": "CIVIL_TOPIC"  
+                },
+                {
+                    "name": "SNS_CONSUMER_TOPIC_NAME",
+                    "value": "CONSUMER_TOPIC"  
+                },
+                {
+                    "name": "SNS_RECAPTCHA_ZERO_BALANCE_NAME",
+                    "value": "RECAPTCHA_ZERO_BALANCE_NAME"  
+                },
+                {
+                    "name": "SNS_API_VERSION",
+                    "value": "2010-03-31"
+                },
+                {
+                    "name": "SNS_PUBLISH_SUBSCRIBERS",
+                    "value": "daniel@homesalesclub.com,gustavo@homesalesclub.com,dan@homesalesclub.com,sean@homesalesclub.com"
+                },
+                {
+                    "name": "SNS_CIVIL_UPDATE_SUBSCRIBERS",
+                    "value": "daniel@homesalesclub.com,mrlrbrizuela@gmail.com"
+                },
+                {
+                    "name": "S3_APP_BUCKET_NAME",
+                    "value": "homesalesclub-data"
+                },
+                {
+                    "name": "S3_SCRAPER_BUCKET_NAME",
+                    "value": "homesalesclub-public-records"
+                },
+                {
+                    "name": "S3_API_VERSION",
+                    "value": "2006-03-01"
+                },
+                {                        
+                    "name": "PUPPETEER_HEADLESS",
+                    "value": "true"
+                },
+                {
+                    "name": "TWO_CAPTCHA_KEY",
+                    "valueFrom": "d0f7e59a400654e707ef6bcd25ab0be0"
+                }
+            ],
+            "secrets": [
+                {
+                    "name": "MONGODB_URI",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/mongodb_uri"
+                },
+                {
+                    "name": "NODE_ENV",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/NODE_ENV"
+                },
+                {
+                    "name": "NODE_HOST",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/NODE_HOST"
+                },
+                {
+                    "name": "NODE_PORT",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/NODE_PORT"
+                },
+                {
+                    "name": "PROPERTY_SHARK_EMAIL",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/PROPERTY_SHARK_EMAIL"
+                },
+                {
+                    "name": "PROPERTY_SHARK_PASSWORD",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/PROPERTY_SHARK_PASSWORD"
+                },
+                {
+                    "name": "RIVERSIDE_PROPERTY_APPRAISER_EMAIL",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/RIVERSIDE_PROPERTY_APPRAISER_EMAIL"
+                },
+                {
+                    "name": "RIVERSIDE_PROPERTY_APPRAISER_PASSWORD",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/RIVERSIDE_PROPERTY_APPRAISER_PASSWORD"
+                },
+                {
+                    "name": "FORECLOSURECOM_USER",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/foreclosurecom_user"
+                },
+                {
+                    "name": "FORECLOSURECOM_PASS",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/foreclosurecom_pass"
+                },
+                {
+                    "name": "jwt_secret",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/jwt_secret"
+                },
+                {
+                    "name": "LANDGRID_ACCOUNT_EMAILS",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/landgrid_account_emails"
+                },
+                {
+                    "name": "LANDGRID_ACCOUNT_PASSWORDS",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/landgrid_account_passwords"
+                },
+                {
+                    "name": "CARD_HOLDER_NAME",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/card_holder_name"
+                },
+                {
+                    "name": "ADDRESS",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/address"
+                },
+                {
+                    "name": "CITY",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/city"
+                },
+                {
+                    "name": "CREDIT_CARD_NUMBER",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/credit_card_number"
+                },
+                {
+                    "name": "EXP_DATE_MONTH",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/exp_date_month"
+                },
+                {
+                    "name": "EXP_DATE_YEAR",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/exp_date_year"
+                },
+                {
+                    "name": "SECURITY_CODE",
+                    "valueFrom": "arn:aws:ssm:us-east-2:465464725359:parameter/homesalesclub-api/production/security_code"
+                }  
+            ],               
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/hsc-api-fargate-td",
+                    "awslogs-region": "us-east-2",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }                
+        }
+    ]
+}

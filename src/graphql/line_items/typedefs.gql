@@ -1,0 +1,82 @@
+extend type Query {
+    lineItems(categoryName: String!, productNames: [String!]!, dateRange: String!): [LineItem]
+    lineItemsCsv(categoryName: String!, productNames: [String!]!, dateRange: String!): CsvResponse
+}
+
+extend type Mutation {
+    createLineItems(categoryName: String, productNames: [String], dateRange: String): Response
+}
+
+type Response {
+    success: Boolean!
+    response: String
+}
+
+type CsvResponse {
+    success: Boolean!
+    csvPath: String
+}
+
+interface LineItem {
+    productId: ID!
+}
+
+type ForeclosureLineItem implements LineItem {
+    productId: ID!
+    Address: String
+    Unit: String 
+    City: String 
+    State: String 
+    Zip: String 
+    County: String 
+    Owner_Occupied: Boolean 
+    Owner_1_First_Name: String
+    Owner_1_Last_Name: String 
+    Owner_2_First_Name: String 
+    Owner_2_Last_Name: String 
+    Mailing_Care_of_Name: String
+    Mailing_Address: String 
+    Mailing_Unit: String 
+    MailingCity: String 
+    MailingState: String 
+    MailingZip: String 
+    PropertyType: String
+    Total_Assessed_Value: String 
+    Last_Sale_Recording_Date: String 
+    Last_Sale_Amount: String
+    Est_Remaining_Balance: String 
+    Est_Value: String
+    Est_Equity: String 
+    Lien_Amount: String
+}
+
+type ForeclosureAuctionLineItem implements LineItem {
+    productId: ID!
+    Address: String 
+    Unit: String 
+    City: String 
+    State: String 
+    Zip: String 
+    County: String
+    Owner_Occupied: Boolean
+    Owner_1_First_Name: String 
+    Owner_1_Last_Name: String 
+    Owner_2_First_Name: String 
+    Owner_2_Last_Name: String 
+    Mailing_Care_of_Name: String 
+    Mailing_Address: String
+    Mailing_Unit: String
+    MailingCity: String
+    MailingState: String
+    MailingZip: String
+    Property_Type: String
+    Effective_Year_Built: String 
+    Total_Assessed_Value: String
+    Last_Sale_Recording: String
+    Last_Sale_Amount: String
+    Total_Open_Loans: String 
+    Est_Remaining_Balance: String
+    Est_Value: String
+    Est_Equity: String
+    Lien_Amount: String
+}

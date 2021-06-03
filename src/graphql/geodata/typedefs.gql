@@ -1,0 +1,30 @@
+extend type Query {
+    geodatas(token: String!): IGeoDataFetchResponse
+}
+
+type Mutation {
+    addGeodata(state: String, state_abbr: String, zipcode: String, county: String, city: String, token: String!): GeoResponse
+    updateGeodata(id: String, state: String, state_abbr: String, zipcode: String, county: String, city: String, token: String!): GeoResponse
+    deleteGeodata(id: String, token: String!): GeoResponse
+}
+
+type IGeoDataFetchResponse {
+    success: Boolean!
+    data: [Geodata]
+    error: String
+}
+
+type GeoResponse {
+    success: Boolean!
+    data: Geodata
+    error: String
+}
+
+type Geodata {
+    _id: ID!
+    state: String
+    state_abbr: String
+    zipcode: String
+    county: String
+    city: String
+}
